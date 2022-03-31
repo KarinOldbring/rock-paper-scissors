@@ -1,0 +1,25 @@
+body {
+    background-color: #ffe4c4;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.game-area {
+
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+
+}
+
+.score-area {
+
+}
