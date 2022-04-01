@@ -41,11 +41,17 @@ button:hover {
     margin-top: 3rem;
 }
 
-#user-choice {
+.choice div:first-child {
     padding-right: 5rem;
 }
 
-.score-area {
+.result-area {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/**.score-area {
     display: flex;
     width: auto;
     justify-content: center;
@@ -55,7 +61,7 @@ button:hover {
 #player-score {
     padding-right: 5rem;
 }
-
+**/
 footer {
     background-color: #ffd29d;
     position: absolute;
