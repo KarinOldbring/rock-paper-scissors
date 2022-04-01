@@ -11,36 +11,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Rock, paper, scissors</title>
 </head>
 <body>
     <h1 class="heading">Rock, Paper, Scissors!</h1>
 
     <section>
-        <h3>Make your pick!</h3>
-        <div class="choice">
-            <button aria-label="Rock" id="rock">👊</button>
-            <button aria-label="Paper" id="paper">🤚</button>
-            <button aria-label="Scissors" id="scissors">✌</button>
+        <h3>Make your pick:</h3>
+        <div class="buttons">
+            <button class="button" data-selection="rock">👊</button>
+            <button class="button" data-selection="paper">🤚</button>
+            <button class="button" data-selection="scissors">✌</button>
         </div>
+    </section>
 
+    <section class="choice">
+        <div id="user-choice">Your Choice: <span></span>
+        </div>
+        <div id="computer-choice">Computer Choice: <span></span>
+        </div>
     </section>
 
     <section class="score-area">
 
         <div id="player-score">Your score: 
-
+            <span>0</span>
         </div>
 
         <div id="computer-score">Computer score: 
-
+            <span>0</span>
         </div>
 
     </section>
 
     <footer>
         <h3>Rules:</h3>
-        <span>Rock beats scissors. Scissors beat paper. Paper beat rock. Best out of five rounds win. Good luck!</span>
+        <span>Rock beats scissors. Scissors beat paper. Paper beat rock. Best out of five rounds wins. Good luck!</span>
     </footer>
     
     <script src="assets/js/script.js"></script>
