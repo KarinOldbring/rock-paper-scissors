@@ -67,7 +67,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 1rem;
+    padding-bottom: 1rem;
 }
 
 footer span {
