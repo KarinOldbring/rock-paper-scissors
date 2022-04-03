@@ -16,36 +16,44 @@
 <body>
     <h1 class="heading">Rock, Paper, Scissors!</h1>
 
+    <section class="signin">
+        <form>
+            <p>Enter username: </p>
+            <input type="text" id="username" required>
+            <button type="submit" id="submit">Let's play!</button>
+        </form>
+    </section>
+
     <section>
         <h3>Make your pick:</h3>
         <div class="buttons">
-            <button class="button" id="rock">👊</button>
-            <button class="button" id="paper">🤚</button>
-            <button class="button" id="scissors">✌</button>
+            <button class="choices" id="rock">👊</button>
+            <button class="choices" id="paper">🤚</button>
+            <button class="choices" id="scissors">✌</button>
         </div>
     </section>
    
     <section class="choice">
-        <div>You chose: <span id="user-choice"></span>
+        <div id="playername">You chose: <span id="user-choice"></span>
         </div>
         <div>Computer chose: <span id="computer-choice"></span>
         </div>
     </section>
 
-    <div class="result-area">🏆: <span id="result"></span></div>
+    <div class="result-area">🏆: <span id="result"></span>
+    </div>
 
-    <!--<section class="score-area">
+    <section class="score-area">
 
-        <div id="player-score">Your score: 
-            <span>0</span>
+        <div id="user-score">Your score: 
+            <span></span>
         </div>
 
         <div id="computer-score">Computer score: 
-            <span>0</span>
+            <span></span>
         </div>
 
     </section>
--->
 
     <footer>
         <h3>Rules:</h3>
