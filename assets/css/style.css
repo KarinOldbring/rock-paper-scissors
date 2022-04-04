@@ -10,6 +10,8 @@ h1 {
     margin-bottom: 2rem;
 }
 
+/** sign in form **/
+
 .signin {
     display: inline-flex;
     width: 100%;
@@ -27,7 +29,10 @@ h1 {
     border: solid 1px;
     padding: revert;
     cursor: pointer;
+    background-color: #ffd29d;
 }
+
+/** choices section **/
 
 h3 {
     display: flex;
@@ -68,11 +73,15 @@ h3 {
     text-transform: uppercase;
 }
 
+/** output of user- and computer-choice **/
+
 .result-area {
     font-size: 2rem;
     text-align: center;
     margin-top: 1rem;
 }
+
+/** score area **/
 
 .score-area {
     display: flex;
@@ -84,6 +93,8 @@ h3 {
 #user-score {
     padding-right: 5rem;
 }
+
+/** footer **/
 
 footer {
     background-color: #ffd29d;

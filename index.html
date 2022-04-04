@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- google fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -13,8 +15,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock, paper, scissors</title>
 </head>
+
 <body>
     <h1 class="heading">Rock, Paper, Scissors!</h1>
+
+    <!-- sign in form -->
 
     <section class="signin">
         <form>
@@ -24,6 +29,8 @@
         </form>
     </section>
 
+    <!-- choices section -->
+
     <section>
         <h3>Make your pick:</h3>
         <div class="buttons">
@@ -32,7 +39,9 @@
             <button class="choices" id="scissors">✌</button>
         </div>
     </section>
-   
+
+    <!-- output of user- and computer-choice -->
+
     <section class="choice">
         <div id="playername">You chose: <span id="user-choice"></span>
         </div>
@@ -43,23 +52,28 @@
     <div class="result-area">🏆: <span id="result"></span>
     </div>
 
+    <!-- score area -->
+
     <section class="score-area">
 
-        <div id="user-score">Your score: 
-            <span></span>
+        <div>Your score:
+            <span id="user-score">0</span>
         </div>
 
-        <div id="computer-score">Computer score: 
-            <span></span>
+        <div>Computer score:
+            <span id="computer-score">0</span>
         </div>
 
     </section>
+
+    <!-- footer -->
 
     <footer>
         <h3>Rules:</h3>
         <span>Rock beats scissors. Scissors beat paper. Paper beat rock. Best out of five rounds wins. Good luck!</span>
     </footer>
-    
+
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

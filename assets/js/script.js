@@ -9,17 +9,20 @@ let result
 let currentUserScore = document.getElementById('user-score')
 let currentComputerScore = document.getElementById('computer-score')
 
+// choices selection
+
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id
     userChoiceDisplay.innerHTML = userChoice
     generateComputerChoice()
     getResult()
-    incrementUserScore()
-    incrementComputerScore()
+
 }))
 
+// generate computer choice
+
 function generateComputerChoice() {
-    const randomChoice = Math.floor(Math.random()*possibleChoices.length)
+    const randomChoice = Math.floor(Math.random() * possibleChoices.length)
 
     if (randomChoice === 0) {
         computerChoice = 'rock'
@@ -32,6 +35,8 @@ function generateComputerChoice() {
     }
     computerChoiceDisplay.innerHTML = computerChoice
 }
+
+// output of user- and computer-choice
 
 const getResult = () => {
     switch (userChoice + computerChoice) {
@@ -55,16 +60,22 @@ const getResult = () => {
     }
 }
 
-function incrementUserScore() {
-    let currentUserScore = parseInt(userScore.innerText);
-    currentUserScore++;
-    console.log(currentUserScore);
-    userScore.innerText = currentUserScore;
-  }
+// increment user-score
 
+function incrementUserScore() {
+    let updatedUserScore = parseInt(currentUserScore.innerText);
+    updatedUserScore++;
+    console.log(updatedUserScore);
+    currentUserScore.innerText = updatedUserScore;
+}
+
+// increment computer-score
+
+
+// Do the same here but create a variable updatedComputerScore use above function for reference
 function incrementComputerScore() {
-    let currentComputerScore = parseInt(computerScore.innerText);
-    currentComputerScore++;
+    let updatedComputerScore = parseInt(currentComputerScore.innerText);
+    updatedComputerScore++;
     console.log(currentComputerScore);
-    computerScore.innerText = currentComputerScore;
+    currentComputerScore.innerText = updatedComputerScore;
 }
