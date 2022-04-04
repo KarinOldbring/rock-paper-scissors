@@ -2,9 +2,11 @@ const computerChoiceDisplay = document.getElementById('computer-choice');
 const userChoiceDisplay = document.getElementById('user-choice');
 const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('.choices');
-const nameValue = document.getElementById('name')
+const nameValue = document.getElementById('name');
 const nameInput = document.getElementById('username');
-const nameSubmit = document.getElementById('submit')
+const nameSubmit = document.getElementById('submit');
+const gameArea = document.getElementById('game-area');
+const nameArea = document.getElementById('name-area');
 let userChoice;
 let randomChoice;
 let computerChoice;
@@ -44,13 +46,23 @@ function generateComputerChoice() {
 nameSubmit.addEventListener('click', (e) => {
     if (nameInput.value) {
         setName()
+        toggleGame()
     } else {
-        alert('Enter username')
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Please enter your winning name!',
+          })
     }
 })
 
 function setName() {
     nameValue.innerText = nameInput.value
+}
+
+function toggleGame() {
+    nameArea.classList.add('hide')
+    gameArea.classList.remove('hide')
 }
 
 // output of user- and computer-choice
