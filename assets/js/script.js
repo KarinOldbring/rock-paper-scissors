@@ -1,13 +1,15 @@
-const computerChoiceDisplay = document.getElementById('computer-choice')
-const userChoiceDisplay = document.getElementById('user-choice')
-const resultDisplay = document.getElementById('result')
-const possibleChoices = document.querySelectorAll('.choices')
-let userChoice
-let randomChoice
-let computerChoice
-let result
-let currentUserScore = document.getElementById('user-score')
-let currentComputerScore = document.getElementById('computer-score')
+const computerChoiceDisplay = document.getElementById('computer-choice');
+const userChoiceDisplay = document.getElementById('user-choice');
+const resultDisplay = document.getElementById('result');
+const possibleChoices = document.querySelectorAll('.choices');
+let userChoice;
+let randomChoice;
+let computerChoice;
+let result;
+let currentUserScore = document.getElementById('user-score');
+let currentComputerScore = document.getElementById('computer-score');
+
+
 
 // choices selection
 
@@ -76,4 +78,12 @@ function incrementComputerScore() {
     updatedComputerScore++;
     console.log(updatedComputerScore);
     currentComputerScore.innerText = updatedComputerScore;
+}
+
+// check winner
+
+if (updatedUserScore === 5 ) {
+    alert = "Congratulations, you won!";
+} else if (updatedComputerScore === 5); {
+    alert = "Sorry, maybe next time!";
 }
