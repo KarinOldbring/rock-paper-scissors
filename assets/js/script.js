@@ -2,6 +2,9 @@ const computerChoiceDisplay = document.getElementById('computer-choice');
 const userChoiceDisplay = document.getElementById('user-choice');
 const resultDisplay = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('.choices');
+const nameValue = document.getElementById('name')
+const nameInput = document.getElementById('username');
+const nameSubmit = document.getElementById('submit')
 let userChoice;
 let randomChoice;
 let computerChoice;
@@ -36,6 +39,18 @@ function generateComputerChoice() {
         computerChoice = 'scissors'
     }
     computerChoiceDisplay.innerHTML = computerChoice
+}
+
+nameSubmit.addEventListener('click', (e) => {
+    if (nameInput.value) {
+        setName()
+    } else {
+        alert('Enter username')
+    }
+})
+
+function setName() {
+    nameValue.innerText = nameInput.value
 }
 
 // output of user- and computer-choice

@@ -27,11 +27,9 @@
     <!-- sign in form -->
 
     <div class="signin">
-        <form>
             <p>Enter username: </p>
-            <input type="text" id="username" required>
-            <button type="submit" id="submit">Let's play!</button>
-        </form>
+            <input type="text" id="username">
+            <button id="submit">Let's play!</button>
     </div>
 
     <!-- choices section -->
@@ -48,7 +46,7 @@
     <!-- output of user- and computer-choice -->
 
     <div class="choice">
-        <div id="playername">You chose: <span id="user-choice"></span>
+        <div id="playername"><span id="name">You</span> chose: <span class="selection" id="user-choice"></span>
         </div>
         <div>Computer chose: <span id="computer-choice"></span>
         </div>
