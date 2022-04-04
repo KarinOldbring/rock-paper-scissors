@@ -71,11 +71,9 @@ function incrementUserScore() {
 
 // increment computer-score
 
-
-// Do the same here but create a variable updatedComputerScore use above function for reference
 function incrementComputerScore() {
     let updatedComputerScore = parseInt(currentComputerScore.innerText);
     updatedComputerScore++;
-    console.log(currentComputerScore);
+    console.log(updatedComputerScore);
     currentComputerScore.innerText = updatedComputerScore;
 }

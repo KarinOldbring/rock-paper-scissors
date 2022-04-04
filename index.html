@@ -17,17 +17,18 @@
 </head>
 
 <body>
+
     <h1 class="heading">Rock, Paper, Scissors!</h1>
 
     <!-- sign in form -->
 
-    <section class="signin">
+    <div class="signin">
         <form>
             <p>Enter username: </p>
             <input type="text" id="username" required>
             <button type="submit" id="submit">Let's play!</button>
         </form>
-    </section>
+    </div>
 
     <!-- choices section -->
 
@@ -42,19 +43,19 @@
 
     <!-- output of user- and computer-choice -->
 
-    <section class="choice">
+    <div class="choice">
         <div id="playername">You chose: <span id="user-choice"></span>
         </div>
         <div>Computer chose: <span id="computer-choice"></span>
         </div>
-    </section>
+    </div>
 
     <div class="result-area">🏆: <span id="result"></span>
     </div>
 
     <!-- score area -->
 
-    <section class="score-area">
+    <div class="score-area">
 
         <div>Your score:
             <span id="user-score">0</span>
@@ -64,7 +65,7 @@
             <span id="computer-score">0</span>
         </div>
 
-    </section>
+    </div>
 
     <!-- footer -->
 
@@ -74,6 +75,7 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
