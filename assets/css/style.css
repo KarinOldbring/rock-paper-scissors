@@ -13,7 +13,7 @@ h1 {
 /** sign in form **/
 
 .signin {
-    display: inline-flex;
+    display: inline-block;
     width: 100%;
     justify-content: center;
     text-align: center;
@@ -30,6 +30,7 @@ h1 {
     padding: revert;
     cursor: pointer;
     background-color: #ffd29d;
+    margin: 15px;
 }
 
 .hide {
@@ -71,6 +72,10 @@ h3 {
 
 .choice div:first-child {
     padding-right: 5rem;
+}
+
+#name {
+    text-transform: capitalize;
 }
 
 .choice span {

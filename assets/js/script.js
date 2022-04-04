@@ -50,8 +50,8 @@ nameSubmit.addEventListener('click', (e) => {
     } else {
         Swal.fire({
             icon: 'error',
-            title: 'Oops...',
-            text: 'Please enter your winning name!',
+            title: 'Hold it!',
+            text: 'Please enter your winning name to play!',
           })
     }
 })
