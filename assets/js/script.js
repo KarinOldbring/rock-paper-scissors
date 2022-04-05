@@ -9,10 +9,12 @@ const gameArea = document.getElementById('game-area');
 const nameArea = document.getElementById('name-area');
 const checkUserWinner = document.getElementById('user-score');
 const checkComputerWinner = document.getElementById('computer-score');
-let userChoice;
-let computerChoice;
 let currentUserScore = document.getElementById('user-score');
 let currentComputerScore = document.getElementById('computer-score');
+let updatedComputerScore = document.getElementById('computer-score');
+let updatedUserScore = document.getElementById('user-score');
+let userChoice = document.getElementById('user-choice');
+let computerChoice = document.getElementById('computer-choice')
 
 
 
@@ -107,6 +109,7 @@ function incrementUserScore() {
         if (updatedUserScore === 5) {
             Swal.fire('Congratulations you won 🎉')
             resetScore()
+            resetChoices()
         }
 }
 
@@ -122,11 +125,20 @@ function incrementComputerScore() {
         if (updatedComputerScore === 5) {
             Swal.fire('Sorry you lost, better luck next time 🤗')
             resetScore()
+            resetChoices()
         }
 }
 
+/**
+ * reset score
+ */
+
 function resetScore() {
-    updatedComputerScore = 0;
-    updatedUserScore = 0;
+    updatedUserScore.innerText = 0;
+    updatedComputerScore.innerText = 0;
 }
 
+function resetChoices() {
+    userChoiceDisplay.innerHTML = '';
+    computerChoiceDisplay.innerHTML = '';
+}
