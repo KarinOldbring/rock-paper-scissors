@@ -104,6 +104,9 @@ function incrementUserScore() {
     updatedUserScore++;
     console.log(updatedUserScore);
     currentUserScore.innerText = updatedUserScore;
+        if (updatedUserScore === 5) {
+            alert('Game over')
+        }
 }
 
 /**
@@ -115,15 +118,8 @@ function incrementComputerScore() {
     updatedComputerScore++;
     console.log(updatedComputerScore);
     currentComputerScore.innerText = updatedComputerScore;
+        if (updatedComputerScore === 5) {
+            alert('Game over')
+        }
 }
 
-/** 
- * check winner
- */
-function checkWinner() {
-    if (currentUserScore === 5) {
-        alert = "Congratulations, you won!";
-    } else if (currentComputerScore === 5); {
-        alert = "Sorry, maybe next time!";
-}
-}
