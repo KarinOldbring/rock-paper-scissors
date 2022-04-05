@@ -15,6 +15,7 @@ let updatedComputerScore = document.getElementById('computer-score');
 let updatedUserScore = document.getElementById('user-score');
 let userChoice = document.getElementById('user-choice');
 let computerChoice = document.getElementById('computer-choice')
+let result = document.getElementById('result');
 
 
 
@@ -136,6 +137,7 @@ function incrementComputerScore() {
 function resetScore() {
     updatedUserScore.innerText = 0;
     updatedComputerScore.innerText = 0;
+    resultDisplay.innerHTML = "";
 }
 
 function resetChoices() {
