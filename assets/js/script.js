@@ -96,7 +96,7 @@ const getResult = () => {
 }
 
 /**
- * increment user-score
+ * increment user-score & check winner
  */
 
 function incrementUserScore() {
@@ -105,12 +105,13 @@ function incrementUserScore() {
     console.log(updatedUserScore);
     currentUserScore.innerText = updatedUserScore;
         if (updatedUserScore === 5) {
-            alert('Game over')
+            Swal.fire('Congratulations you won 🎉')
+            resetScore()
         }
 }
 
 /**
- * increment computer-score
+ * increment computer-score & check winner 
  */
 
 function incrementComputerScore() {
@@ -119,7 +120,13 @@ function incrementComputerScore() {
     console.log(updatedComputerScore);
     currentComputerScore.innerText = updatedComputerScore;
         if (updatedComputerScore === 5) {
-            alert('Game over')
+            Swal.fire('Sorry you lost, better luck next time 🤗')
+            resetScore()
         }
+}
+
+function resetScore() {
+    updatedComputerScore = 0;
+    updatedUserScore = 0;
 }
 
