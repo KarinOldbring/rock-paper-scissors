@@ -7,16 +7,18 @@ const nameInput = document.getElementById('username');
 const nameSubmit = document.getElementById('submit');
 const gameArea = document.getElementById('game-area');
 const nameArea = document.getElementById('name-area');
+const checkUserWinner = document.getElementById('user-score');
+const checkComputerWinner = document.getElementById('computer-score');
 let userChoice;
-let randomChoice;
 let computerChoice;
-let result;
 let currentUserScore = document.getElementById('user-score');
 let currentComputerScore = document.getElementById('computer-score');
 
 
 
-// choices selection
+/**
+ * choices selection
+ */
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id
@@ -26,7 +28,9 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 
 }))
 
-// generate computer choice
+/**
+ * generate computer choice
+ */
 
 function generateComputerChoice() {
     const randomChoice = Math.floor(Math.random() * possibleChoices.length)
@@ -52,7 +56,7 @@ nameSubmit.addEventListener('click', (e) => {
             icon: 'error',
             title: 'Hold it!',
             text: 'Please enter your winning name to play!',
-          })
+        })
     }
 })
 
@@ -65,7 +69,9 @@ function toggleGame() {
     gameArea.classList.remove('hide')
 }
 
-// output of user- and computer-choice
+/**
+ * output of user- and computer-choice
+ */
 
 const getResult = () => {
     switch (userChoice + computerChoice) {
@@ -89,7 +95,9 @@ const getResult = () => {
     }
 }
 
-// increment user-score
+/**
+ * increment user-score
+ */
 
 function incrementUserScore() {
     let updatedUserScore = parseInt(currentUserScore.innerText);
@@ -98,7 +106,9 @@ function incrementUserScore() {
     currentUserScore.innerText = updatedUserScore;
 }
 
-// increment computer-score
+/**
+ * increment computer-score
+ */
 
 function incrementComputerScore() {
     let updatedComputerScore = parseInt(currentComputerScore.innerText);
@@ -107,10 +117,13 @@ function incrementComputerScore() {
     currentComputerScore.innerText = updatedComputerScore;
 }
 
-// check winner
-
-if (updatedUserScore === 5 ) {
-    alert = "Congratulations, you won!";
-} else if (updatedComputerScore === 5); {
-    alert = "Sorry, maybe next time!";
+/** 
+ * check winner
+ */
+function checkWinner() {
+    if (currentUserScore === 5) {
+        alert = "Congratulations, you won!";
+    } else if (currentComputerScore === 5); {
+        alert = "Sorry, maybe next time!";
+}
 }

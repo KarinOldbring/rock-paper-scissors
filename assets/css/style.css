@@ -30,11 +30,11 @@ h1 {
     padding: revert;
     cursor: pointer;
     background-color: #ffd29d;
-    margin: 15px;
+    margin: 15px 15px 20px 15px;
 }
 
 image {
-    padding: 15px;
+    padding: 20px;
 }
 
 .hide {
