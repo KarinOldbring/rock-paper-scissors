@@ -1,3 +1,7 @@
+/**
+ * variables
+ */
+
 const computerChoiceDisplay = document.getElementById('computer-choice');
 const userChoiceDisplay = document.getElementById('user-choice');
 const resultDisplay = document.getElementById('result');
@@ -20,7 +24,7 @@ let result = document.getElementById('result');
 
 
 /**
- * choices selection
+ * user choices
  */
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
@@ -49,6 +53,10 @@ function generateComputerChoice() {
     }
     computerChoiceDisplay.innerHTML = computerChoice
 }
+
+/**
+ * signin to start the game
+ */
 
 nameSubmit.addEventListener('click', (e) => {
     if (nameInput.value) {
@@ -107,11 +115,11 @@ function incrementUserScore() {
     updatedUserScore++;
     console.log(updatedUserScore);
     currentUserScore.innerText = updatedUserScore;
-        if (updatedUserScore === 5) {
-            Swal.fire('Congratulations you won 🎉')
-            resetScore()
-            resetChoices()
-        }
+    if (updatedUserScore === 5) {
+        Swal.fire('Congratulations you won 🎉')
+        resetScore()
+        resetChoices()
+    }
 }
 
 /**
@@ -123,15 +131,15 @@ function incrementComputerScore() {
     updatedComputerScore++;
     console.log(updatedComputerScore);
     currentComputerScore.innerText = updatedComputerScore;
-        if (updatedComputerScore === 5) {
-            Swal.fire('Sorry you lost, better luck next time 🤗')
-            resetScore()
-            resetChoices()
-        }
+    if (updatedComputerScore === 5) {
+        Swal.fire('Sorry you lost, better luck next time 🤗')
+        resetScore()
+        resetChoices()
+    }
 }
 
 /**
- * reset score
+ * reset score and choices
  */
 
 function resetScore() {

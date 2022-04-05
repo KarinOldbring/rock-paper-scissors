@@ -15,7 +15,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock, paper, scissors</title>
 </head>
@@ -27,51 +26,51 @@
     <!-- sign in form -->
 
     <div id="name-area" class="signin">
-            <h3>Enter username to play!</h3>
-            <input type="text" id="username">
-            <button id="submit">Let's play!</button>
+        <h3>Enter username to play!</h3>
+        <input type="text" id="username">
+        <button id="submit">Let's play!</button>
     </div>
 
-<div id="game-area" class="hide">
+    <div id="game-area" class="hide">
 
-    <!-- choices section -->
+        <!-- choices section -->
 
-    <section>
-        <h3>Make your pick:</h3>
-        <div class="buttons">
-            <button class="choices" id="rock">👊</button>
-            <button class="choices" id="paper">🤚</button>
-            <button class="choices" id="scissors">✌</button>
+        <section>
+            <h3>Make your pick:</h3>
+            <div class="buttons">
+                <button class="choices" id="rock">👊</button>
+                <button class="choices" id="paper">🤚</button>
+                <button class="choices" id="scissors">✌</button>
+            </div>
+        </section>
+
+        <!-- output of user- and computer-choice -->
+
+        <div class="choice">
+            <div id="playername"><span id="name">You</span> chose: <span class="selection" id="user-choice"></span>
+            </div>
+            <div>Computer chose: <span id="computer-choice"></span>
+            </div>
         </div>
-    </section>
 
-    <!-- output of user- and computer-choice -->
+        <div class="result-area">🏆: <span id="result"></span>
+        </div>
 
-    <div class="choice">
-        <div id="playername"><span id="name">You</span> chose: <span class="selection" id="user-choice"></span>
+        <!-- score area -->
+
+        <div class="score-area">
+
+            <div>Your score:
+                <span id="user-score">0</span>
+            </div>
+
+            <div>Computer score:
+                <span id="computer-score">0</span>
+            </div>
+
         </div>
-        <div>Computer chose: <span id="computer-choice"></span>
-        </div>
+
     </div>
-
-    <div class="result-area">🏆: <span id="result"></span>
-    </div>
-
-    <!-- score area -->
-
-    <div class="score-area">
-
-        <div>Your score:
-            <span id="user-score">0</span>
-        </div>
-
-        <div>Computer score:
-            <span id="computer-score">0</span>
-        </div>
-
-    </div>
-
-</div>
 
     <!-- footer -->
 
