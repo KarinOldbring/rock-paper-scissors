@@ -130,6 +130,13 @@ footer span {
     justify-content: center;
 }
 
+/** media queries for smaller devices 550px and below */
+@media screen and (max-height: 550px) {
+    footer {
+        position: inherit;
+    }
+}
+
 /** media queries for smaller devices 450px and below */
 @media screen and (max-width: 450px) {
     h1 {
