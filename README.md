@@ -88,3 +88,42 @@ I used wireframes to plan my project. THe main alteration I made was using creat
 
 ## ** Testing**
 
+### Responsiveness
+
+### Lighthouse
+    * Desktop
+    * Mobile
+
+### **Validators**
+All HTML files were run through (https://validator.w3.org/nu/#textarea) and my CSS file was run through (https://jigsaw.w3.org/css-validator/validator) to ensure all code meet the correct standard. No errors or warnings were found for HTML or CSS. 
+The JavaScript file, was run through (https://jshint.com/) and showed no errors. 
+
+## **Bugs**
+
+## **Technology Used**
+
+    ### Languages
+    * HTML
+    * CSS
+    * JavaScript
+
+    ### Libraries
+    * [Sweet Alert 2](https://sweetalert2.github.io/) - For alert if not entering username and game over. 
+    * [W3 Schools Emoji Unicode Reference](https://www.w3schools.com/charsets/ref_emoji.asp) - For emoji-buttons. 
+    * [Favicon images](https://realfavicongenerator.net/).
+
+## **Deployment**
+I deployed the website on GitHub pages via the following steps: 
+1. From the projects repository go to the **settings** tab.
+1. On the left hand menu near the bottom click on the **pages** link.
+1. Under **Source** click on the button "None" which will produce a drop down.
+1. Click on **Main** and then click **Save**.
+1. The following message will appear:  **Your site is ready to be published**.
+1. After a few minutes the site will be published and the message will change to **Your site is published**.
+
+The live site can be accessed via the following link [Rock, Paper, Scissors](https://karinoldbring.github.io/rock-paper-scissors/). 
+
+## **Credits** 
+
+### Content 
+* The Rock, Paper, Scissors game was inspired by (https://www.youtube.com/watch?v=1yS-JV4fWqY) and (https://www.youtube.com/watch?v=RwFeg0cEZvQ). Whilst I've tried to deviate as much as possible, and added additional features and functions, there may be som similarities in the code. 

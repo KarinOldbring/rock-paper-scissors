@@ -5,8 +5,13 @@
 }
 
 body {
+    display: flex;
     font-family: "Raleway", serif;
     background-color: #ffe4c4;
+}
+
+.main {
+    flex-grow: 1;
 }
 
 h1 {
