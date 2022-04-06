@@ -118,7 +118,7 @@ h3 {
 
 footer {
     background-color: #ffd29d;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     left: 0;

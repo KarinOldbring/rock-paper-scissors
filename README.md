@@ -3,16 +3,16 @@ Rock, paper, scissors is a website where users can play the classic game of Rock
 
 ![Am I Responsive?](/docs/screenshots/am-i-responsive.png)
 
-## **Table of Contents
-* [**Planning Stage](#planning-stage)
+## **Table of Contents**
+* [Planning Stage](#planning-stage)
     * Project Goals
     * User Goals
     * Design Goals
     * Design Choices
-    * Font
-    * Color Scheme
+        * Font
+        * Color Scheme
     * Wireframes 
-    * Features
+* [**Features**](#features)
     * Future Features to be Added
 * [**Testing**](#testing)
     * Responsiveness
@@ -29,7 +29,6 @@ Rock, paper, scissors is a website where users can play the classic game of Rock
 * [**Deployment**](#deployment)
 * [**Credits**](#credits)
     * Content
-    * Media
     * Thanks
 
 ## **Planning Stage**
@@ -53,7 +52,7 @@ The target user is someone who has some time to kill or just want a quick break.
 ### Design Choices
 
 #### Font
-    When designing Rock, Paper, Scissors I wanted to give the site a clean and sophisticated, but yet soft look, and hence I chose a single font from Google Fonts falled [Raleway](https://fonts.googleapis.com/css2?family=Raleway&display=swap) which I think fulfills the stated purpose. 
+When designing Rock, Paper, Scissors I wanted to give the site a clean and sophisticated, but yet soft look, and hence I chose a single font from Google Fonts falled [Raleway](https://fonts.googleapis.com/css2?family=Raleway&display=swap) which I think fulfills the stated purpose. 
 
 #### Color Scheme
 I chose a color scheme that gives the site a delicate look and well matches the icons. Very important to me was to ensure that the contrasting colors work well. I chose the default yellow color for the hands, hence on purpose not selecting a specific ethnicity or skin tone and therefore remaining neutral. I find that the bisque background-color goes well with the icons and chose black for the font to keep site neat. 
@@ -82,11 +81,11 @@ I used wireframes to plan my project. THe main alteration I made was using creat
     * When one player reaches 5 points an alert appears to tell who's the winner. 
     * Score and previous choice is reset when game is over, making it easy to start a new round. 
 
-## ** Features to be added**
+## **Features to be added**
     * Possibility to play against someone else, by sending an invitation. 
     * Increment score function for each round won, encouraging player to play multiple rounds. 
 
-## ** Testing**
+## **Testing**
 
 ### Responsiveness
 
@@ -102,12 +101,12 @@ The JavaScript file, was run through (https://jshint.com/) and showed no errors.
 
 ## **Technology Used**
 
-    ### Languages
+### Languages
     * HTML
     * CSS
     * JavaScript
 
-    ### Libraries
+### Libraries
     * [Sweet Alert 2](https://sweetalert2.github.io/) - For alert if not entering username and game over. 
     * [W3 Schools Emoji Unicode Reference](https://www.w3schools.com/charsets/ref_emoji.asp) - For emoji-buttons. 
     * [Favicon images](https://realfavicongenerator.net/).
@@ -126,4 +125,6 @@ The live site can be accessed via the following link [Rock, Paper, Scissors](htt
 ## **Credits** 
 
 ### Content 
-* The Rock, Paper, Scissors game was inspired by (https://www.youtube.com/watch?v=1yS-JV4fWqY) and (https://www.youtube.com/watch?v=RwFeg0cEZvQ). Whilst I've tried to deviate as much as possible, and added additional features and functions, there may be som similarities in the code. 
+The Rock, Paper, Scissors game was inspired by (https://www.youtube.com/watch?v=1yS-JV4fWqY) and (https://www.youtube.com/watch?v=RwFeg0cEZvQ). Whilst I've tried to deviate as much as possible, and added additional features and functions, there may be som similarities in the code. 
+
+### Thanks 

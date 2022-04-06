@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A site where you can play rock, paper, scissors whenever you want, with your computer as your opponent. ">
+    <meta name="description"
+        content="A site where you can play rock, paper, scissors whenever you want, with your computer as your opponent. ">
     <meta name="keywords" content="game, rock, paper, scissors">
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package_v0.16(1)/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0.16(1)/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package_v0.16(1)/favicon-16x16.png">
-    <link rel="manifest" href="./favicon_package_v0.16(1)/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
 
     <!-- google fonts -->
 
@@ -23,63 +24,63 @@
 
 <body>
 
-<noscript>This site requires JavaScript to run properly, please enable JavaScript in your settings.</noscript>
+    <noscript>This site requires JavaScript to run properly, please enable JavaScript in your settings.</noscript>
 
-<main class="main">
+    <main class="main">
 
-    <h1 class="heading">Rock, Paper, Scissors!</h1>
+        <h1 class="heading">Rock, Paper, Scissors!</h1>
 
-    <!-- sign in form -->
+        <!-- sign in form -->
 
-    <div id="name-area" class="signin">
-        <h2>Enter username to play!</h2>
-        <label for="username"></label>
-        <input type="text" name="username" id="username">
-        <button id="submit">Let's play!</button>
-    </div>
-
-    <div id="game-area" class="hide">
-
-        <!-- choices section -->
-
-        <section>
-            <h3>Make your pick:</h3>
-            <div class="buttons">
-                <button class="choices" id="rock">👊</button>
-                <button class="choices" id="paper">✋</button>
-                <button class="choices" id="scissors">✌</button>
-            </div>
-        </section>
-
-        <!-- output of user- and computer-choice -->
-
-        <div class="choice">
-            <div id="playername"><span id="name">You</span> chose: <span class="selection" id="user-choice"></span>
-            </div>
-            <div>Computer chose: <span id="computer-choice"></span>
-            </div>
+        <div id="name-area" class="signin">
+            <h2>Enter username to play!</h2>
+            <label for="username"></label>
+            <input type="text" name="username" id="username">
+            <button id="submit">Let's play!</button>
         </div>
 
-        <div class="result-area">🏆: <span id="result"></span>
-        </div>
+        <div id="game-area" class="hide">
 
-        <!-- score area -->
+            <!-- choices section -->
 
-        <div class="score-area">
+            <section>
+                <h3>Make your pick:</h3>
+                <div class="buttons">
+                    <button class="choices" id="rock">👊</button>
+                    <button class="choices" id="paper">✋</button>
+                    <button class="choices" id="scissors">✌</button>
+                </div>
+            </section>
 
-            <div>Your score:
-                <span id="user-score">0</span>
+            <!-- output of user- and computer-choice -->
+
+            <div class="choice">
+                <div id="playername"><span id="name">You</span> chose: <span class="selection" id="user-choice"></span>
+                </div>
+                <div>Computer chose: <span id="computer-choice"></span>
+                </div>
             </div>
 
-            <div>Computer score:
-                <span id="computer-score">0</span>
+            <div class="result-area">🏆: <span id="result"></span>
+            </div>
+
+            <!-- score area -->
+
+            <div class="score-area">
+
+                <div>Your score:
+                    <span id="user-score">0</span>
+                </div>
+
+                <div>Computer score:
+                    <span id="computer-score">0</span>
+                </div>
+
             </div>
 
         </div>
 
-    </div>
-
-</main>
+    </main>
 
     <!-- footer -->
 
