@@ -170,4 +170,5 @@ The live site can be accessed via the following link [Rock, Paper, Scissors](htt
 The Rock, Paper, Scissors game was inspired by (https://www.youtube.com/watch?v=1yS-JV4fWqY) and (https://www.youtube.com/watch?v=RwFeg0cEZvQ). Whilst I've tried to deviate as much as possible, and added additional features and functions, there may be some similarities in the code. 
 
 ### Thanks 
-I would like to thank my mentor [Richard Wells](https://github.com/D0nni387) who's invaluable support and guidance took me through this project, and really made me enjoy it despite being on a tight schedule! 
+* I would like to thank my mentor [Richard Wells](https://github.com/D0nni387) who's invaluable support and guidance took me through this project, and really made me enjoy it despite being on a tight schedule! 
+* Also a big thank you to fellow student Matt Bodden_5P who once again came to the rescue with the footer positioning. 

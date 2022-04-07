@@ -63,6 +63,7 @@ nameSubmit.addEventListener('click', (e) => {
             title: 'Hold it!',
             text: 'Please enter your winning name to play!',
         });
+        document.getElementsByTagName("body")[0].classList.toggle("swal2-height-auto");
     }
 });
 
@@ -113,6 +114,7 @@ function incrementUserScore() {
         Swal.fire('Congratulations you won 🎉');
         resetScore();
         resetChoices();
+        document.getElementsByTagName("body")[0].classList.toggle("swal2-height-auto");
     }
 }
 
@@ -128,6 +130,7 @@ function incrementComputerScore() {
         Swal.fire('Sorry you lost, better luck next time 🤗');
         resetScore();
         resetChoices();
+        document.getElementsByTagName("body")[0].classList.toggle("swal2-height-auto");
     }
 }
 
