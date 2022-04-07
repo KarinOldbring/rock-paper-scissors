@@ -86,18 +86,40 @@ I used wireframes to plan my project. THe main alteration I made was using creat
     * Increment score function for each round won, encouraging player to play multiple rounds. 
 
 ## **Testing**
+The site has been tested on Chrome, Edge and Firefox, there was an issue with Firefox that is now resolved, more information regarding this in the Bugs section below. The site has also been tested on iPhone and Android devices with a minor bug concerning iPhone, this is also further displayed in the Bugs section below. 
 
 ### Responsiveness
+![AmIResponsive](docs/screenshots/am-i-responsive.png)
+I have performed extensive testing to make sure that the site is fully responsive on small, medium and large size screens. As well as testing in dev tools and using various mobile devices I also used "Am I Responsive" to ensure responsiveness. On very small screens some scrolling is needed if device is used in horizantal mode. 
+To make sure the site works well on all screen sizes I found two different key widths were necessary. 
+1 **Smaller devices with max-height 550px and below**
+    * Decreased the margin-top on h1. 
+    * Decreased font-size and adjusted margin for the buttons and the score-area. 
+2 **Smaller devices with max-width of 450px and below**
+    * Decreased the margin-top on h1. 
+    * Decreased font-size and adjusted margin for the buttons and the result-area.
 
 ### Lighthouse
-    * Desktop
-    * Mobile
+The site has been tested with Lighthouse for both desktop and mobile versions, scoring between 99-100. 
+    ## Desktop
+    ![Lighthouse for desktop](docs/screenshots/lighthouse-desktop.png)
+    ## Mobile
+    ![Lighthouse for mobile](docs/screenshots/lighthouse-mobile.png)
 
 ### **Validators**
 All HTML files were run through (https://validator.w3.org/nu/#textarea) and my CSS file was run through (https://jigsaw.w3.org/css-validator/validator) to ensure all code meet the correct standard. No errors or warnings were found for HTML or CSS. 
-The JavaScript file, was run through (https://jshint.com/) and showed no errors. 
+The JavaScript file, was run through (https://jshint.com/) and showed no errors. Swal, used for the sweet alert, is stated as an undefined variable since it is an external file, declared in a third party library. 
 
 ## **Bugs**
+During the decelopment of Rock, Paper, Scissors I encountered numerous obstacles and bugs. The main ones are listed below. 
+    
+### Fixed Bugs
+    * Bug: When trying the site on Firefox I discovered that the scissors-hand wasn't displayed correctly. I had copied the emoji symbols from (https://www.w3schools.com/charsets/ref_emoji.asp) and they worked fine everywhere accept for that specific emoji in Firefox. 
+        * Fix: I tried a number variants such as checking that the latest version of font was installed and checking that there were no content blockers, but nothing worked. After consulting my mentor he tried using (https://emojipedia.org/) instead which worked perfectly. 
+    * Bug: When using smaller screens horizontally, the user needs to scroll to see the footer. Scrolling may not be ideal but the two options I could think of would not be better. The first option would be making the game area a lot smaller using media queries, but since the user needs to touch the screen to play that would seem like an error-prone fix. The second would be to make some kind of button for the user to click to show the rules stated in the footer, but that would probably take even more effort from the user than just scrolling. Hence, I chose to keep the site a bit larger in size, leaving the user to do a little bit of scrolling if in need of the rules. 
+
+### Known Bugs
+    * When entering the site using iPhone, the site automatically zooms in. If you zoom out the page works as intended but each time you enter the site, and after entering username to get to the gamearea, you need to zoom out. Despite hours of online search and consulting my mentor I have not been able to fix this issue unfortunately. Note that this issue seems to only appear using iPhone, not Android. 
 
 ## **Technology Used**
 
@@ -108,7 +130,7 @@ The JavaScript file, was run through (https://jshint.com/) and showed no errors.
 
 ### Libraries
     * [Sweet Alert 2](https://sweetalert2.github.io/) - For alert if not entering username and game over. 
-    * [W3 Schools Emoji Unicode Reference](https://www.w3schools.com/charsets/ref_emoji.asp) - For emoji-buttons. 
+    * [Emojipedia](https://emojipedia.org/) - For emoji-buttons. 
     * [Favicon images](https://realfavicongenerator.net/).
 
 ## **Deployment**
