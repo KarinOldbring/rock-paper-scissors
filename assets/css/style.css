@@ -4,14 +4,19 @@
     border: none;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     display: flex;
+    flex-direction: column;
     font-family: "Raleway", serif;
     background-color: #ffe4c4;
 }
 
 .main {
-    flex-grow: 1;
+    flex: 1 0 auto;
 }
 
 h1 {
@@ -118,11 +123,10 @@ h3 {
 
 footer {
     background-color: #ffd29d;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     left: 0;
     padding-bottom: 1.5rem;
+    flex-shrink: 0;
 }
 
 footer span {
@@ -130,10 +134,24 @@ footer span {
     justify-content: center;
 }
 
-/** media queries for smaller devices 550px and below */
+/** media queries for smaller devices 550px and below */ 
 @media screen and (max-height: 550px) {
-    footer {
-        position: inherit;
+    h1 {
+        margin-top: 1rem;
+    }
+
+    .choices {
+        font-size: 3rem;
+        padding: 0 1rem;
+    }
+
+    .result-area {
+        margin: auto;
+        font-size: 1.5rem;
+}
+
+    .score-area {
+        margin: auto;
     }
 }
 
