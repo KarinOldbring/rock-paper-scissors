@@ -71,14 +71,19 @@ I used wireframes to plan my project. THe main alteration I made was using creat
 
 ### Signin-area
     * The signin function was added to give the player a more personal touch. The name inserted is displayed in the following game area. 
+    ![Signin area](docs/screenshots/signin-area.png)
     * To make it extra clear to the player what to do first i.e enter username, and for layout purposes, I chose to hide the game area when entering the site. 
-    * If no username is entered, an alert will show up urging the user to enter a name. 
+    * If no username is entered, an alert will show up urging the user to enter a name.
+    ![Signin alert](docs/screenshots/signin-alert.png)
 
 ### Game area
     * When entering the game area the sign in is hidden and the players name is displayed on the site. The player is encouraged to make a pick and the icons scale up when hovered to improve user experience. 
+    ![Game area](docs/screenshots/game-area.png)
     * Once the player has made a move the computer automatically makes a counter move and the result is displayed. 
+    ![Choices and show score](docs/screenshots/choices-scores.png)
     * For each draw the score is incremented, except for when there's a draw. 
     * When one player reaches 5 points an alert appears to tell who's the winner. 
+    ![Game over](docs/screenshots/gameover-alert.png)
     * Score and previous choice is reset when game is over, making it easy to start a new round. 
 
 ## **Features to be added**
@@ -150,3 +155,4 @@ The live site can be accessed via the following link [Rock, Paper, Scissors](htt
 The Rock, Paper, Scissors game was inspired by (https://www.youtube.com/watch?v=1yS-JV4fWqY) and (https://www.youtube.com/watch?v=RwFeg0cEZvQ). Whilst I've tried to deviate as much as possible, and added additional features and functions, there may be som similarities in the code. 
 
 ### Thanks 
+* I would like to thank my mentor [Richard Wells](https://github.com/D0nni387) who's invaluable support and guidance took me through this project, and really made me enjoy it despite tight schedule! 
