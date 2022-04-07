@@ -108,7 +108,6 @@ const getResult = () => {
 function incrementUserScore() {
     let updatedUserScore = parseInt(currentUserScore.innerText);
     updatedUserScore++;
-    console.log(updatedUserScore);
     currentUserScore.innerText = updatedUserScore;
     if (updatedUserScore === 5) {
         Swal.fire('Congratulations you won 🎉');
@@ -124,7 +123,6 @@ function incrementUserScore() {
 function incrementComputerScore() {
     let updatedComputerScore = parseInt(currentComputerScore.innerText);
     updatedComputerScore++;
-    console.log(updatedComputerScore);
     currentComputerScore.innerText = updatedComputerScore;
     if (updatedComputerScore === 5) {
         Swal.fire('Sorry you lost, better luck next time 🤗');
