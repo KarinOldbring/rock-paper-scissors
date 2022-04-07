@@ -9,10 +9,6 @@ body {
     height: 100%;
 }
 
-body.swal2-height-auto {
-    height: 100%;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -156,6 +152,7 @@ footer span {
     h2 {
         padding: 1rem;
     }
+
     .choices {
         font-size: 3rem;
         padding: 0 1rem;
@@ -173,7 +170,7 @@ footer span {
 
 /** media queries for smaller devices 450px and below */
 @media screen and (max-width: 450px) {
-   .choices {
+    .choices {
         padding: 1rem;
         font-size: 3rem;
     }
