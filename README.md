@@ -113,11 +113,10 @@ I have performed extensive testing to make sure that the site is fully responsiv
 To make sure the site works well on all screen sizes I found two different key widths were necessary. 
 
 1 **Smaller devices with max-height 550px and below**
-* Decreased the margin-top on h1. 
-* Decreased font-size and adjusted margin for the buttons and the score-area. 
+* Decreased margin and padding on h1 and h2.  
+* Decreased font-size and adjusted margin for the buttons and the result- and score-area. 
 
 2 **Smaller devices with max-width of 450px and below**
-* Decreased the margin-top on h1. 
 * Decreased font-size and adjusted margin for the buttons and the result-area.
 
 ### Lighthouse
