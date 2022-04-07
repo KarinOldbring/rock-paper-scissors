@@ -166,6 +166,10 @@ footer span {
         font-size: 3rem;
     }
 
+    .choice {
+        padding-left: 1rem;
+    }
+
     .result-area {
         font-size: 1.5rem;
     }
