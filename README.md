@@ -37,7 +37,7 @@ Rock, paper, scissors is a website where users can play the classic game of Rock
 The goal of this project was to create an easy game for users to play. To make the site more personal the player chooses its personal username to start playing. 
 
 ### User Goals
-The target user is someone who has some time to kill or just want a quick break. 
+    The target user is someone who has some time to kill or just want a quick break. 
     * An easy-going gamer. 
     * Someone who wants a break and get some distraction. 
     * Looking to settle a dispute with someone by battling their device. 
@@ -69,21 +69,21 @@ I used wireframes to plan my project. THe main alteration I made was using creat
 
 ## **Features**
 
-### Signin-area
-    * The signin function was added to give the player a more personal touch. The name inserted is displayed in the following game area. 
-    ![Signin area](docs/screenshots/signin-area.png)
+### Sign in-area
+    * The sign in function was added to give the player a more personal touch. The name inserted is displayed in the following game area. 
+![Sign in area](docs/screenshots/signin-area.png)
     * To make it extra clear to the player what to do first i.e enter username, and for layout purposes, I chose to hide the game area when entering the site. 
     * If no username is entered, an alert will show up urging the user to enter a name.
-    ![Signin alert](docs/screenshots/signin-alert.png)
+![Signin alert](docs/screenshots/signin-alert.png)
 
 ### Game area
     * When entering the game area the sign in is hidden and the players name is displayed on the site. The player is encouraged to make a pick and the icons scale up when hovered to improve user experience. 
-    ![Game area](docs/screenshots/game-area.png)
+![Game area](docs/screenshots/game-area.png)
     * Once the player has made a move the computer automatically makes a counter move and the result is displayed. 
-    ![Choices and show score](docs/screenshots/choices-scores.png)
+![Choices and show score](docs/screenshots/choices-scores.png)
     * For each draw the score is incremented, except for when there's a draw. 
     * When one player reaches 5 points an alert appears to tell who's the winner. 
-    ![Game over](docs/screenshots/gameover-alert.png)
+![Game over](docs/screenshots/gameover-alert.png)
     * Score and previous choice is reset when game is over, making it easy to start a new round. 
 
 ## **Features to be added**
@@ -106,9 +106,9 @@ To make sure the site works well on all screen sizes I found two different key w
 
 ### Lighthouse
 The site has been tested with Lighthouse for both desktop and mobile versions, scoring between 99-100. 
-    ## Desktop
+## Desktop
     ![Lighthouse for desktop](docs/screenshots/lighthouse-desktop.png)
-    ## Mobile
+## Mobile
     ![Lighthouse for mobile](docs/screenshots/lighthouse-mobile.png)
 
 ### **Validators**
@@ -119,24 +119,24 @@ The JavaScript file, was run through (https://jshint.com/) and showed no errors.
 During the decelopment of Rock, Paper, Scissors I encountered numerous obstacles and bugs. The main ones are listed below. 
     
 ### Fixed Bugs
-    * Bug: When trying the site on Firefox I discovered that the scissors-hand wasn't displayed correctly. I had copied the emoji symbols from (https://www.w3schools.com/charsets/ref_emoji.asp) and they worked fine everywhere accept for that specific emoji in Firefox. 
-        * Fix: I tried a number variants such as checking that the latest version of font was installed and checking that there were no content blockers, but nothing worked. After consulting my mentor he tried using (https://emojipedia.org/) instead which worked perfectly. 
-    * Bug: When using smaller screens horizontally, the user needs to scroll to see the footer. Scrolling may not be ideal but the two options I could think of would not be better. The first option would be making the game area a lot smaller using media queries, but since the user needs to touch the screen to play that would seem like an error-prone fix. The second would be to make some kind of button for the user to click to show the rules stated in the footer, but that would probably take even more effort from the user than just scrolling. Hence, I chose to keep the site a bit larger in size, leaving the user to do a little bit of scrolling if in need of the rules. 
+* Bug: When trying the site on Firefox I discovered that the scissors-hand wasn't displayed correctly. I had copied the emoji symbols from (https://www.w3schools.com/charsets/ref_emoji.asp) and they worked fine everywhere accept for that specific emoji in Firefox. 
+    * Fix: I tried a number variants such as checking that the latest version of font was installed and checking that there were no content blockers, but nothing worked. After consulting my mentor he tried using (https://emojipedia.org/) instead which worked perfectly. 
+* Bug: When using smaller screens horizontally, the user needs to scroll to see the footer. Scrolling may not be ideal but the two options I could think of would not be better. The first option would be making the game area a lot smaller using media queries, but since the user needs to touch the screen to play that would seem like an error-prone fix. The second would be to make some kind of button for the user to click to show the rules stated in the footer, but that would probably take even more effort from the user than just scrolling. Hence, I chose to keep the site a bit larger in size, leaving the user to do a little bit of scrolling if in need of the rules. 
 
 ### Known Bugs
-    * When entering the site using iPhone, the site automatically zooms in. If you zoom out the page works as intended but each time you enter the site, and after entering username to get to the gamearea, you need to zoom out. Despite hours of online search and consulting my mentor I have not been able to fix this issue unfortunately. Note that this issue seems to only appear using iPhone, not Android. 
+* When entering the site using iPhone, the site automatically zooms in. If you zoom out the page works as intended but each time you enter the site, and after entering username to get to the gamearea, you need to zoom out. Despite hours of online search and consulting my mentor I have not been able to fix this issue unfortunately. Note that this issue seems to only appear using iPhone, not Android. 
 
 ## **Technology Used**
 
 ### Languages
-    * HTML
-    * CSS
-    * JavaScript
+* HTML
+* CSS
+* JavaScript
 
 ### Libraries
-    * [Sweet Alert 2](https://sweetalert2.github.io/) - For alert if not entering username and game over. 
-    * [Emojipedia](https://emojipedia.org/) - For emoji-buttons. 
-    * [Favicon images](https://realfavicongenerator.net/).
+* [Sweet Alert 2](https://sweetalert2.github.io/) - For alert if not entering username and game over. 
+* [Emojipedia](https://emojipedia.org/) - For emoji-buttons. 
+* [Favicon images](https://realfavicongenerator.net/).
 
 ## **Deployment**
 I deployed the website on GitHub pages via the following steps: 
